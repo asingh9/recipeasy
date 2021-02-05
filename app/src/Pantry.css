@@ -1,0 +1,15 @@
+.Pantry {
+  width: 25vw;
+  border: 5px solid black;
+  margin-left: 1vw;
+  margin-top: 1vh;
+}
+
+.Pantry-item {
+  font-size: 24pt;
+}
+
+.Item-list {
+  list-style-type : none;
+  text-align : left;
+}
