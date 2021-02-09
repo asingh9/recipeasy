@@ -29,7 +29,8 @@
 }
 
 .footer {
-  background-color: black;
+  background-color: #282c34;
+  border-top: 2px solid black;
   min-height: 10vh;
   display: flex;
   align-items: center;
