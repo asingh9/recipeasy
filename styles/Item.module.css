@@ -1,0 +1,19 @@
+@media (prefers-color-scheme: dark) {
+  .header {
+    color: white;
+  }
+
+  .text {
+    color: white;
+  }
+}
+
+.remove {
+  margin-left: 1vw;
+  color: lightcoral;
+}
+
+.add {
+  margin-left: 1vw;
+  color: lightgreen;
+}

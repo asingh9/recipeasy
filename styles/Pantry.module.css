@@ -3,13 +3,16 @@
   border: 5px solid black;
   margin-left: 1vw;
   margin-top: 1vh;
+  margin-bottom: 5vh;
 }
 
-.Pantry-item {
-  font-size: 24pt;
+@media (prefers-color-scheme: dark) {
+  .header {
+    color: white;
+  }
 }
 
-.Item-list {
+.items {
   list-style-type : none;
   text-align : left;
 }

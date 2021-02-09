@@ -1,34 +1,19 @@
 {
-  "name": "react-redux-tutorial",
-  "version": "0.0.0",
-  "description": "Code from the React tutorial, modified to use basic Redux.",
-  "main": "server.js",
-  "dependencies": {
-    "body-parser": "^1.4.3",
-    "express": "^4.4.5"
-  },
-  "devDependencies": {},
+  "name": "recipeasy",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node server.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/firasd/react-redux-tutorial.git"
-  },
-  "keywords": [
-    "react",
-    "redux",
-    "tutorial",
-    "comment",
-    "example"
-  ],
-  "author": "petehunt",
-  "bugs": {
-    "url": "https://github.com/firasd/react-redux-tutorial/issues"
-  },
-  "homepage": "https://github.com/firasd/react-redux-tutorial",
-  "engines" : {
-    "node" : "0.12.x"
+  "dependencies": {
+    "next": "^10.0.6",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1",
+    "@fortawesome/fontawesome-svg-core": "^1.2.34",
+    "@fortawesome/react-fontawesome": "^0.1.14",
+    "@fortawesome/free-solid-svg-icons": "5.15.2",
+    "@svgr/webpack": "5.5.0"
   }
 }

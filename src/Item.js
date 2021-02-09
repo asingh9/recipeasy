@@ -1,7 +1,7 @@
 import React from 'react';
-import './Item.css';
-import add from './add.svg';
-import remove from './remove.svg';
+import styles from '../styles/Item.module.css';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+
 export default class Item extends React.Component {
   constructor(props) {
     super(props);
@@ -17,11 +17,9 @@ export default class Item extends React.Component {
 
   increaseQuantity() {
     this.setState(state => ({ quantity: state.quantity + 1 }));
-    console.log('up');
   }
 
   reduceQuantity() {
-    console.log('down');
     this.setState(state => ({ quantity: this.state.quantity - 1 }));
   }
 
@@ -29,10 +27,10 @@ export default class Item extends React.Component {
     const unit = this.state.unit ? `(${this.state.unit})` : '';
     return (
       <div>
-        <h2>{this.state.name}</h2>
-        <p>Quantity {unit}: {this.state.quantity}</p>
-        <img className="quantity-button" src={remove} width="20" height="20" alt="add" onClick={this.reduceQuantity}/>
-        <img className="quantity-button" src={add} width="20" height="20" alt="add" onClick={this.increaseQuantity}/>
+        <h2 className={styles.header}>{this.state.name}</h2>
+        <p className={styles.text}>Quantity {unit}: {this.state.quantity}</p>
+        <a href="#" onClick={this.reduceQuantity}><FontAwesomeIcon size="2x" className={styles.remove} icon="minus-square" /></a>
+        <a href="#" onClick={this.increaseQuantity}><FontAwesomeIcon size="2x" className={styles.add} icon="plus-square" /></a>
       </div>
     );
   }
