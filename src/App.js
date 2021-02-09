@@ -18,7 +18,7 @@ function Header(props) {
 function Footer(props) {
   return (
     <footer className={styles.footer}>
-      <p>Copyright &copy; 2021 Avinash B Singh</p>
+      <p className={styles.text}>Copyright &copy; 2021 Avinash B Singh</p>
     </footer>
   )
 }
